@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang= "en"></html>
+<head>
+  <link rel= "stylesheet" href="styles.css">
+  <meta charset= "utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0"/>
+</head>
+<body>
+  <h1 id="title">What Is Your Favourite Colour?</h1>
+  <p id="description">Please complete the following survey form for research purposes. We thank you for your time.</p>
+
+  <form id="survey-form">
+
+   <div class= "input-element"> 
+    <label for="name" id="name-label">
+      Name
+    </label>
+    <input id="name" type="text" placeholder="eg. John Doe" required/>
+   </div> 
+
+   <div class= "input-element">
+   <label for="email" id="email-label">
+      E-mail
+    </label>
+    <input id="email" type="email" placeholder="eg. johndoe@domain.com" required/>
+   </div>
+
+ <div class= "input-element">
+   <label for="age" id="age-label">
+      Age
+    </label>
+    <input id="number" type="number" placeholder="How old are you?" min="3" max="100" required/>
+   </div>
+
+   <div class= "input-element">
+    <label for="number" id="number-label">
+      Cellphone number
+    </label>
+    <input id="phone" type="tel" placeholder="eg. 0822221234" minlenth ="10" maxlength="11" required/>
+   </div> 
+
+    <div class= "input-element">
+      <label for ="dropdown">Pick your favourite colour from the dropdown list
+      </label>
+    <select id="dropdown" name="colour"> 
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="yellow">Yellow</option> 
+      <option value="green">Green</option>
+      <option value="orange">Orange</option>
+      <option value="purple">Purple</option>
+      <option value="pink">Pink</option> 
+     </select>  
+     </div>
+
+     <div class= "input-element">
+       <label>Was your favourite colour on the list above?</label>
+  <div>
+  <label for="yes-no">
+    Yes
+  </label>
+  <input type="radio" name="yes-no" value="yes" checked>
+  </div>
+  <div>
+  <label for="yes-no">
+    No
+  </label>
+  <input type="radio" name="yes-no" value="no">
+  </div>
+ </div>
+
+<div class= "input-element">
+       <label>Which of the following items do you own in your favourite colour?</label>
+  <div>
+  <label for="item" >
+    A plate
+  </label>
+  <input class= "checkbox" type="checkbox" name="item" value="plate" checked>
+  </div>
+  <div>
+  <label for="item">
+   A pillow
+  </label>
+  <input type="checkbox" name="item" value="pillow" class= "checkbox">
+  </div>
+  <div>
+  <label for="item">
+    A shirt
+  </label>
+  <input type="checkbox" name="item" value="shirt"
+  class= "checkbox">
+  </div>
+  <div>
+  <label for="item">
+    A toothbrush
+  </label>
+  <input type="checkbox" name="item" value="toothbrush" class= "checkbox">
+  </div>
+ </div>
+ <div class= "input-element">
+<label>If any of your answers do not fit the options above, please enter them here.</label>
+</div>
+<div class= "input-element">
+   <textarea type="text"></textarea>
+ </div>
+<div class= "input-element">
+  <label>Please remeber to submit your answers
+  </label>
+  </div>
+  <div>
+    <button type="submit" id="submit">Submit</button>
+</div>
+    </form>
